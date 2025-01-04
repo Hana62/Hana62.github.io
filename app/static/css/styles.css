@@ -1,0 +1,518 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 18px;
+}
+h3 {
+    color: #333;
+    margin-bottom: 16px;
+}
+h4 {
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+    margin-bottom: 14px;
+
+}
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"],
+select {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="email"],
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="password"],
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type=submit] , button {
+    width: 70%;
+    display: inline-block;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3;
+}
+
+.radio-group {
+    margin-bottom: 20px;
+}
+
+
+/* Table container for optional styling */
+.table-container {
+    width: 100%;
+    margin: 20px 0;
+    overflow-x: auto; /* Add horizontal scroll for smaller screens */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main table styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between table cells */
+    background-color: #fff;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Table header styling */
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+th {
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Table body styling */
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 12px 15px;
+    font-size: 14px;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover effect on rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Responsive table with scrollbar */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto; /* Allows horizontal scrolling */
+        white-space: nowrap;
+    }
+
+    /* Adjust padding for mobile */
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Optional: Styling buttons inside the table (like edit/delete) */
+table .btn {
+    padding: 6px 12px;
+    margin: 2px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+table .btn-danger {
+    background-color: #dc3545;
+}
+
+
+
+
+
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+
+
+.questions-container {
+    padding: 20px;
+}
+
+.question-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.answers {
+    margin-top: 10px;
+}
+
+.answer-item {
+    margin-left: 20px;
+    position: relative; /* Allows absolute positioning for badge */
+}
+
+.answer-label {
+    font-weight: bold;
+    margin-right: 10px; /* Spacing between label and answer text */
+}
+
+.badge {
+    position: absolute; /* Positioning for the badge */
+    right: 0; /* Aligns to the right */
+    background-color: green; /* Green background for correct answers */
+    color: white; /* White text for the badge */
+    padding: 2px 5px; /* Padding for better appearance */
+    border-radius: 3px; /* Rounded corners */
+}
+
+
+
+
+
+
+/* Custom styles */
+.styled-block {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .styled-block {
+    margin: 20px;
+    padding: 20px;
+}
+
+.styled-block h3 {
+    margin-bottom: 15px;        /* Extra spacing below headers */
+}
+
+.styled-block ul, .styled-block menu {
+    list-style-type: none;      /* Remove bullet points */
+    padding-left: 0;            /* Remove default padding */
+}
+
+.styled-block li {
+    padding: 10px 0;            /* Spacing between list items */
+    border-bottom: 1px solid #ddd; /* Separator between list items */
+}
+
+.styled-block li:last-child {
+    border-bottom: none;        /* Remove border on last item */
+}
+
+.styled-block a {
+    text-decoration: none;      /* Remove underline from links */
+    color: #007bff;             /* Bootstrap primary color */
+    font-weight: bold;          /* Bold text for links */
+}
+
+.styled-block a:hover {
+    text-decoration: underline; /* Add underline on hover for interactivity */
+}
+
+/* Adjust button styling in .styled-block */
+.styled-block .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.styled-block .btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary-custom {
+    background-color: #007bff;  /* Primary color */
+    color: #fff;
+    border-radius: 5px;         /* Rounded corners for buttons */
+    padding: 10px 20px;
+    text-decoration: none;      /* Remove link underline */
+    font-weight: bold;          /* Make the text bold */
+}
+
+.btn-primary-custom:hover {
+    background-color: #0056b3;  /* Darken on hover */
+}
+
+.btn-primary-custom1 {
+    background-color: #36c0c5;  /* Primary color */
+    color: #b57f37;
+    border-radius: 5px;         /* Rounded corners for buttons */
+    padding: 10px 20px;
+    text-decoration: none;      /* Remove link underline */
+    font-weight: bold;          /* Make the text bold */
+}
+
+.btn-primary-custom1:hover {
+    background-color: #65b6af;  /* Darken on hover */
+}
+
+/* Add this CSS to your stylesheet */
+.description-text {
+    display: inline-block;
+    text-indent: 0; /* No indentation for the first line */
+    padding-left: 1.5em; /* Padding for alignment */
+    margin: 0;
+    line-height: 1.6; /* Optional: improve readability with line height */
+}
+
+.description-text::before {
+    content: '';
+    display: block;
+    width: 1.5em;
+    float: left;
+    height: 100%;
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+
+/* Countdown Timer Style */
+.countdown-timer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #721c24;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+/* Question Block Style */
+.question-block {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question-block h4 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.question-text {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Answer List Style */
+.answer-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answer-list li {
+    margin-bottom: 8px;
+}
+
+.answer-list input[type="radio"] {
+    margin-right: 8px;
+}
+
+.answer-text {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Submit Button Style */
+.submit-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Basic table styling */
+.exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.exam-table th, .exam-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header styling */
+.exam-table thead {
+    background-color: #f2f2f2;
+}
+
+.exam-table th {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Row styling */
+.exam-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.exam-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Button styling */
+.exam-table button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* Compact table headers and cells */
+    .table th, .table td {
+        padding: 0.3rem 0.5rem;  /* Reduces padding */
+        font-size: 0.9rem;       /* Reduces font size */
+    }
+
+    /* Adjust button size within the table */
+    .table .btn-info {
+        padding: 0.2rem 0.5rem;  /* Smaller button padding */
+        font-size: 0.85rem;      /* Smaller font for buttons */
+    }
+
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flash-messages li {
+    color: red; /* or another alert color */
+    margin-bottom: 10px;
+}
+
+.additional-links {
+    margin-top: 15px; /* Space above the additional links */
+}
+
+.additional-links a {
+    margin-right: 10px; /* Space between links */
+    text-decoration: underline; /* Make links more noticeable */
+}
+
+
+.exam-table button:hover {
+    background-color: #45a049;
+}
